@@ -29,7 +29,7 @@ public class JavaApplication1 {
        try{
            tabl.somme(tab, tab1);
        } 
-       catch (arraysnotmuch e) {System.out.printf(""+e);}
+       catch (arraysnotmuch e) {System.out.printf(""+e+"123");}
     }
     
 }
