@@ -9,9 +9,9 @@ package javaapplication1;
  *
  * @author cosmos 2011
  */
-public class tabl {
-
-    /**
+public class VectorHelper{
+ 
+   /**
      * trier le tableau tab
      * @param tab 
      * tableau de double a trier 

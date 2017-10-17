@@ -19,15 +19,15 @@ public class JavaApplication1 {
         
         double tab[]={1,2,78,4};
         double tab1[]={1,2,78,4,45};
-        tabl.show(tab, tab.length);
-        tabl.tabTrie(tab, tab.length);
+        VectorHelper.show(tab, tab.length);
+        VectorHelper.tabTrie(tab, tab.length);
         System.out.print("\n*******show after******** \n");
-        tabl.show(tab, tab.length);
-        tabl.inverse(tab);
+        VectorHelper.show(tab, tab.length);
+        VectorHelper.inverse(tab);
         System.out.print("\n*******show after inverse ******** \n");
-        tabl.show(tab, tab.length);
+        VectorHelper.show(tab, tab.length);
        try{
-           tabl.somme(tab, tab1);
+           VectorHelper.somme(tab, tab1);
        } 
        catch (arraysnotmuch e) {System.out.printf(""+e+"123");}
     }
