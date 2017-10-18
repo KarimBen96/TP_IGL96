@@ -17,7 +17,7 @@ public class VectorHelper{
      * tableau de double a trier 
      * @param taille la taille du tableau tab
      */
-    public static void tabTrie(double tab[],int taille){ // ordoner les ele,ent d un tqble
+    public static void tabTrie(int tab[],int taille){ // ordoner les ele,ent d un tqble
 
         int indice_max;
 
@@ -35,9 +35,9 @@ public class VectorHelper{
      * trouver le max dans le tableau 1D tab
      * @param tab un tableau 1D
      * @param taille la taille du tableau tab
-     * @return le max dans tab
+     * @return return l'indice du max dans tab
      */
-    public static int max(double tab[],int taille){
+    public static int max(int tab[],int taille){
 
         int i=0,indice_max=0;
 
@@ -61,9 +61,9 @@ public class VectorHelper{
      * @param i indice de la i eme case dans tab
      * @param j indice de la j eme cas dans tab
      */
-    public static void echanger(double tab[],int i,int j){
+    public static void echanger(int tab[],int i,int j){
 
-        double tmp;
+        int tmp;
 
         tmp=tab[i];
 
@@ -78,7 +78,7 @@ public class VectorHelper{
      * @param tab le tableau a inverser .
      * @param taille la taille du tableau tab
      */
-    public static void show(double tab[],int taille)
+    public static void show(int tab[],int taille)
   {
       for(int i=0;i<taille;i++)
           System.out.println("tab["+i+"]="+tab[i]+"\n");
@@ -91,9 +91,9 @@ public class VectorHelper{
  * 
  * 
  */
-   public static void inverse(double tab[])
+   public static void inverse(int tab[])
   {
-     double a;
+     int a;
      for(int i=0,j=tab.length-1;i<tab.length/2;i++,j--)
      {
          a=tab[i];
@@ -106,13 +106,14 @@ public class VectorHelper{
      *
      * @param tab1 tableau a 1D 
      * @param tab2 Tableau a 1D
-     * @return un Tableau de 1D des Double de la memetaille que tab1 et tab2 contenant la somme des element de tab1 et tab2
-     * @throws arraysnotmuch si le nembre des slement de 
+     * @return return  un Tableau de 1D des Double de la meme taille que tab1 et tab2 contenant la somme des element de tab1 et tab2
+     *  
      */
-    public static double[] somme(double tab1[],double tab2[]) throws arraysnotmuch
+    public static int[] somme(int tab1[],int tab2[]) 
    {
-       double tabres[]= new double[tab1.length];
-       if(!(tab1.length==tab2.length) ) throw new arraysnotmuch("les deux tableaux n'ont pas la meme taille");
+       int tabres[]= new int[tab1.length];
+       if(!(tab1.length==tab2.length) ) return null;
+       
        else
        {
          for(int i=0;i<tab1.length;i++)   

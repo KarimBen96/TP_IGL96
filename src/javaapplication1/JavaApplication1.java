@@ -17,19 +17,8 @@ public class JavaApplication1 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        double tab[]={1,2,78,4};
-        double tab1[]={1,2,78,4,45};
-        VectorHelper.show(tab, tab.length);
-        VectorHelper.tabTrie(tab, tab.length);
-        System.out.print("\n*******show after******** \n");
-        VectorHelper.show(tab, tab.length);
-        VectorHelper.inverse(tab);
-        System.out.print("\n*******show after inverse ******** \n");
-        VectorHelper.show(tab, tab.length);
-       try{
-           VectorHelper.somme(tab, tab1);
-       } 
-       catch (arraysnotmuch e) {System.out.printf(""+e+"123");}
+     
+      
     }
     
 }
