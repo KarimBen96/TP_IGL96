@@ -6,4 +6,4 @@ nbbuild/
 dist/
 nbdist/
 .nb-gradle/
-JavaApplication1\build\classes\.netbeans_automatic_build
+build\classes\.netbeans_automatic_build
